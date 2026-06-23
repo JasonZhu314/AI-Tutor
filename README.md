@@ -2,7 +2,7 @@
 
 AI Tutor is a personal, folder-native tutoring system for learning from local resources: course folders, textbooks, papers, Obsidian vaults, and code repositories.
 
-The system is designed around Codex as the primary coordinator and Gemini as an occasional consultant.
+The system is designed around Codex as the primary coordinator, with Gemini and Claude as occasional consultants.
 
 ## Status
 
@@ -25,7 +25,7 @@ observe learner -> infer learner state -> choose next episode -> watch attempt -
 - Local folders store source-proximal control files and indexes.
 - Context packets keep model context focused.
 - Learning artifacts keep sessions from disappearing into chat history.
-- Codex coordinates; Gemini consults.
+- Codex coordinates; Gemini and Claude consult.
 
 ## Public vs Private
 
@@ -67,6 +67,7 @@ templates/             Public-safe Markdown templates
 examples/              Synthetic example workspaces
 AGENTS.md              Codex/project instructions
 GEMINI.md              Gemini consultant instructions
+CLAUDE.md              Claude consultant instructions
 ```
 
 ## First Pilot Subjects

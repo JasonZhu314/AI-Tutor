@@ -10,14 +10,15 @@ The tutor is not an answer machine. It should support active learning, feedback,
 
 ## Supported Agents
 
-For the personal MVP, support only two agents:
+For the personal MVP, support exactly three agents:
 
 ```text
 Codex = coordinator, filesystem operator, code tutor, note maintainer
-Gemini = bounded consultant for search, critique, review, and second opinions
+Gemini = bounded consultant for broad search, field research, source discovery, and critique
+Claude = bounded consultant for deep critique, writing review, pedagogy review, and alternative reasoning
 ```
 
-Do not design generic multi-provider orchestration until the Codex + Gemini workflow is stable.
+Do not design generic multi-provider orchestration until the Codex + Gemini + Claude workflow is stable.
 
 ## Core Principles
 

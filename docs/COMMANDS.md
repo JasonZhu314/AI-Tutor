@@ -80,4 +80,5 @@ ai-tutor ingest-source
 ai-tutor review-notes
 ai-tutor plan-next-episode
 ai-tutor gemini-review
+ai-tutor claude-review
 ```

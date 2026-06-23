@@ -42,7 +42,8 @@ Report changed files in chat.
 
 ```text
 Codex = coordinator and file operator
-Gemini = consultant for search, critique, review, second opinions
+Gemini = consultant for search, field research, source discovery, critique
+Claude = consultant for deep critique, writing review, pedagogy review, alternative reasoning
 ```
 
 ## Do Not

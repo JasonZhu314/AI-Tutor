@@ -1,12 +1,13 @@
 # Roadmap
 
-## Phase 0: Two-Agent Constraint
+## Phase 0: Three-Agent Constraint
 
-Support only Codex and Gemini for the personal MVP.
+Support only Codex, Gemini, and Claude for the personal MVP.
 
 ```text
 Codex = coordinator
-Gemini = consultant
+Gemini = search and field-research consultant
+Claude = critique, writing, pedagogy, and reasoning consultant
 ```
 
 ## Phase 1: File-Based Scaffold
@@ -53,7 +54,8 @@ Possible outputs:
 - bridge note conventions;
 - chat export workflow;
 - Codex-led update workflow;
-- Gemini consultation hooks.
+- Gemini consultation hooks;
+- Claude consultation hooks.
 
 ## Phase 5: Search and Retrieval
 

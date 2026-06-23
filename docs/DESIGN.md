@@ -75,7 +75,8 @@ Each serious session should produce or update at least one artifact:
 
 ```text
 Codex = coordinator
-Gemini = consultant
+Gemini = search and field-research consultant
+Claude = critique, writing, pedagogy, and reasoning consultant
 ```
 
-Codex owns context packets, file edits, local code work, Obsidian note updates, and final synthesis. Gemini provides bounded search, critique, review, and second opinions.
+Codex owns context packets, file edits, local code work, Obsidian note updates, and final synthesis. Gemini provides bounded broad search, source discovery, field research, and external critique. Claude provides bounded deep critique, writing review, pedagogy review, alternative explanations, and reasoning checks.
