@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Local config and secrets
+.env
+.env.*
+*.local
+*.local.*
+config.local.toml
+
+# Private learner state and local workspaces
+.local/
+private/
+learner_state/
+workspace_state/
+session_logs/
+real_profiles/
+
+# Large or private source material
+*.pdf
+*.pptx
+*.docx
+*.mp4
+*.mp3
+*.wav
+*.zip
+*.tar
+*.gz
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
