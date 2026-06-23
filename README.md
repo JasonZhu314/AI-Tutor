@@ -6,7 +6,7 @@ The system is designed around Codex as the primary coordinator, with Gemini and 
 
 ## Status
 
-Design and scaffold phase. The first implementation target is a file-based workflow that creates templates and context packets. It does not need to call an LLM API yet.
+Phase 1 scaffold CLI. The current implementation renders Markdown templates, creates private Obsidian/workspace files, and prints context packet paths. It does not call an LLM API.
 
 ## Why This Exists
 
@@ -48,20 +48,43 @@ Your private Obsidian vault should contain real learner state:
 
 Do not commit private learner state or course materials.
 
-## Planned CLI
+## Run From Source
+
+The implementation is currently standard-library only. From the repo root:
 
 ```bash
-ai-tutor init-global
-ai-tutor init-domain LLMs
-ai-tutor init-workspace --name nanoGPT --source "C:\path\to\nanoGPT" --domain LLMs
-ai-tutor show-context
-ai-tutor start-session
-ai-tutor close-session
+python -m ai_tutor.cli --help
 ```
+
+If running from a checkout without installing the package, set `PYTHONPATH=src` first.
+
+PowerShell example:
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m ai_tutor.cli --help
+```
+
+## Scaffold Example
+
+Commands are dry-run by default. Add `--apply` to write files.
+
+```bash
+ai-tutor init-global --vault "<vault-path>" --apply
+ai-tutor init-domain LLMs --project-root "<vault-path>/Projects/AI Tutor" --apply
+ai-tutor init-workspace --name nanoGPT --source "<path-to-nanogpt>" --domain LLMs --project-root "<vault-path>/Projects/AI Tutor" --apply
+ai-tutor show-context --workspace nanoGPT --project-root "<vault-path>/Projects/AI Tutor"
+ai-tutor start-session --workspace nanoGPT --mode tutor --goal "Understand causal self-attention" --project-root "<vault-path>/Projects/AI Tutor" --apply
+ai-tutor close-session --workspace nanoGPT --project-root "<vault-path>/Projects/AI Tutor"
+```
+
+Use `--local-control` with `init-workspace` only when you want to create `_learning/` files inside the source folder.
 
 ## Repository Layout
 
 ```text
+src/                   Python scaffold CLI
+tests/                 Unit tests for scaffold behavior
 docs/                  Design, workflows, privacy, command specs
 templates/             Public-safe Markdown templates
 examples/              Synthetic example workspaces

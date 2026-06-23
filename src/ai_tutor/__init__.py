@@ -1,0 +1,3 @@
+"""AI Tutor scaffold package."""
+
+__version__ = "0.1.0"

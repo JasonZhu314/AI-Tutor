@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-tutor"
+version = "0.1.0"
+description = "File-based scaffold for a folder-native, Obsidian-connected AI tutor."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Jason Zhu" }]
+dependencies = []
+
+[project.scripts]
+ai-tutor = "ai_tutor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100

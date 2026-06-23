@@ -9,11 +9,11 @@ mode: {{mode}}
 
 ## Current Goal
 
-- TBD
+- {{goal}}
 
 ## Tutor Mode
 
-- TBD
+- {{mode}}
 
 ## Relevant Learner State
 
